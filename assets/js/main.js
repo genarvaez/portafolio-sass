@@ -30,3 +30,20 @@ _gaq.push(['_trackPageview']);
   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 })();
 /******************************FIN SLIDER****************************************/
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        $("nav").removeClass('transparent');
+        $("nav").addClass('white');
+        $("nav ul a").css("color", "#424242")
+         $("nav a").css("color", "#424242")
+     	
+
+
+    } else {
+        $("nav").addClass('transparent');
+        $("nav ul a").css("color", "white");
+         $("nav a").css("color", "white");
+    }
+}

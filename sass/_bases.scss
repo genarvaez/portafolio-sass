@@ -14,6 +14,10 @@ body{
 			margin: 10px;
 	}
 }
+.transparent{
+	position: relative;
+	bottom: 20px;
+}
 
 .theme{
 	p{
@@ -28,6 +32,14 @@ body{
 		}
 	}
 }
+.navegador{
+	position: fixed;
+	top: 0px;
+	left: 0;
+	right: 0;
+	z-index: 100;
+}
+
 .device{
 	i{
 		margin: 15px 0;
@@ -66,7 +78,7 @@ body{
 .design{
 	background-color: white;
 	border-radius: 10px;
-	margin: 100px 30px;
+	margin: 80px 0px;
 	padding: 20px;
 	p{
 		padding: 30px;
@@ -91,7 +103,6 @@ body{
 .info{
 	background: url('../img/img_city.jpg');
 	background-size: cover;
-	margin: 0 30px;
 	position: relative;
 	bottom: 120px;
 	background-attachment: fixed;
@@ -104,5 +115,59 @@ body{
 	p{
 		font-size: 1.3em
 	}
+
+}
+
+.box-products{
+	margin-top: 50px;
+	background: $colorTitulos;
+	padding: 10px;
+	border-radius: 10px;
+	img{
+		position: relative;
+		bottom: 30px;
+		border-radius: 10px;
+		box-shadow: $shadow;
+		-webkit-transition: width 0.8s; /* Safari */
+		transition: bottom 0.8s;
+	}
+	img:hover{
+		bottom: 50px;
+		box-shadow: $hoverShadow;
+	}
+	h6{
+		color: #e91e63;
+		span{
+			color: black;
+			font-size: 1.3em;
+			font-weight: bolder;
+		}
+	}
+	p{
+		color: $colorTexto;
+		margin: 10px auto
+	}
+
+}
+.price{
+	p{
+		color: #585858;
+	}
+}
+.portfolio{
+	background-color: $colorTitulos;
+	margin: 100px 0;
+	img{
+		border-radius: 30px;
+		box-shadow: $shadow;
+	}
+
+}
+
+
+
+.bigSection{
+	box-shadow: -3px 17px 33px 2px rgba(0,0,0,0.75);
+	margin: $marginContainer;
 
 }
