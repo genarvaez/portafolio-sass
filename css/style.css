@@ -1,0 +1,25 @@
+
+
+.fullBackground {
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2000;
+  -webkit-filter: contrast(40%);
+}
+
+.caption{
+  font-size: 42pt;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: #fff;
+  margin-top: 20%;
+}
+.subtitle{
+  color: white;
+}

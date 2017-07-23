@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PortaFolio- Sass</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header>
+		<div class="nav-wrapper grey lighten-5">
+		    <div class="row">
+		    	<div class="col m1">
+		      		<a href="#!" class="brand-logo"><img src="img/logo_new.png" alt=""></a>
+		      	</div>
+		       	<div class="col m3 theme">
+		      		<p>Theme <span>Hestia ProfTF</span></p>
+		      	</div>
+		      	<div class="col m1 device">
+		      		<i class="fa fa-desktop fa-2x" aria-hidden="true"></i>
+		      	</div>
+		      	<div class="col m1 device">
+		      		<i class="fa fa-mobile fa-2x" aria-hidden="true"></i>
+		      	</div>
+		      	<div class="col m1 device">
+		      		<i class="fa fa-tablet fa-2x" aria-hidden="true"></i>
+		      	</div>
+		      	<div class="col offset-s1 m2">
+		      		<a class="waves-effect waves-light blue btn">Admin Demo</a>
+		      	</div>
+		      	<div class="col m2">
+		      		<a class="waves-effect waves-light red lighten-1 btn">Download this theme</a>
+		      	</div>
+		      	<div class="col m1">
+		      		<span><i class="fa fa-times fa-2x nav-hidden" aria-hidden="true"></i></span>
+		      	</div>
+		    </div>
+		</div>
+		<nav class="transparent">
+		    <div class="nav-wrapper">
+		      <a href="#!" class="brand-logo"><h5>HestiaPro</h5></a>
+		      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+		      <ul id="dropdown1" class="dropdown-content">
+		       <li><a href=""><i class="fa fa-clock-o" aria-hidden="true"></i>1 minute Setup</a></li>
+		       	<li><a href=""><i class="fa fa-rocket" aria-hidden="true"></i> Fast Updates & Support</a></li>
+		       	<li><a href=""><i class="fa fa-eye" aria-hidden="true"></i> Live Customizer</a></li>
+		       	<li><a href=""><i class="fa fa-video-camera" aria-hidden="true"></i>Video Turorial</a></li>
+		       	<li><a href=""><i class="fa fa-picture-o" aria-hidden="true"></i> Custom Background</a></li>
+		       	<li><a href=""><i class="fa fa-mobile" aria-hidden="true"></i>Responsive Design</a></li>
+		       	<li><a href=""><i class="fa fa-forward" aria-hidden="true"></i>Optimized for speed</a></li>
+		       	<li><a href=""><i class="fa fa-flag" aria-hidden="true"></i>Translation & RTL ready</a></li>
+		       	<li><a href=""><i class="fa fa-search" aria-hidden="true"></i>SEO Optimized</a></li>
+		       	<li><a href=""><i class="fa fa-arrows" aria-hidden="true"></i>Drag-and-Drop Buider</a></li>
+		       	<li><a href=""><i class="fa fa-money" aria-hidden="true"></i>WooComerce ready</a></li>
+		       </li>
+		      </ul>
+		      <ul id="dropdown2" class="dropdown-content">
+		       <li><a href=""><i class="fa fa-star" aria-hidden="true"></i>Features</a></li>
+		       	<li><a href=""><i class="fa fa-info-circle" aria-hidden="true"></i> About</a></li>
+		       	<li><a href=""><i class="fa fa-users" aria-hidden="true"></i>Our Team</a></li>
+		       	<li><a href=""><i class="fa fa-usd" aria-hidden="true"></i>Price</a></li>
+		       	<li><a href=""><i class="fa fa-commenting" aria-hidden="true"></i>Testimonials</a></li>
+		       	<li><a href=""><i class="fa fa-newspaper-o" aria-hidden="true"></i>Susbribe</a></li>
+		       	<li><a href=""><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Blog</a></li>
+		       	<li><a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i>Contact</a></li>
+		      </ul>
+		      <ul class="right hide-on-med-and-down">
+		        <li><a class="dropdown-button" href="#!" data-activates="dropdown1"><i class="fa fa-cloud" aria-hidden="true"></i> FEATURES<i class="material-icons right">arrow_drop_down</i></a></li>
+		       <li><a class="dropdown-button" href="#!" data-activates="dropdown2"><i class="fa fa-clipboard" aria-hidden="true"></i> SECTIONS<i class="material-icons right">arrow_drop_down</i></a></li>
+		        <li><a href="collapsible.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Shop</a></li>
+		        <li><a href="mobile.html"><i class="fa fa-bookmark" aria-hidden="true"></i> Blog</a></li>
+		        <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
+		        <li><a href="#"><button class="pink btn"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Buy Now</button></a></li>
+		        <li><i class="fa fa-chevron-down fa-2x" aria-hidden="true"></i></li>
+		      </ul>
+		      <ul class="side-nav" id="mobile-demo">
+		         <li><a class="dropdown-button" href="#!" ><i class="fa fa-cloud" aria-hidden="true"></i> FEATURES<i class="material-icons right">arrow_drop_down</i></a></li>
+		        <li><a class="dropdown-button" href="#!" ><i class="fa fa-clipboard" aria-hidden="true"></i> SECTIONS<i class="material-icons right">arrow_drop_down</i></a></li>
+		         <li><a href="collapsible.html"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Shop</a></li>
+		         <li><a href="mobile.html"><i class="fa fa-bookmark" aria-hidden="true"></i> Blog</a></li>
+		         <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact</a></li>
+		         <li><a href="#"><button class="pink btn"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Buy Now</button></a></li>
+
+		      </ul>
+		    </div>
+		  </nav>
+		  <section class="container center">
+		    <div class="fullBackground"></div>
+		    <h1 class="caption">Slick Material Design</h1>
+		    <h5 class="subtitle">Beautiful, Elegantly Coded, One-Page WordPress Theme for Business</h5>
+		    <button>SEE MORE</button>
+		  </section>		  
+	</header>
+	<section class="design">
+		<div class="row">
+			<div class="col m12 center">
+				<p >Nullam blandit gravida viverra. Etiam turpis erat, sagittis sit amet felis non, porta porta justo. Integer ornare nibh nulla, id pulvinar metus cursus semper. Vivamus dictum pellentesque mi. Vivamus ipsum tellus, mattis non ex sed, semper sodales ligula. Vivamus luctus lorem.</p>
+			</div>
+			<div class="row center">
+				<div class="col m4">
+					<i class="fa fa-th fa-5x" aria-hidden="true"></i>
+					<p>Responsive</p>
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at ut assumenda nisi id, saepe, inventore error dolore dolores voluptas praesentium minima iure aut quod voluptatibus, optio, atque iusto quis.</p>
+				</div>
+				<div class="col m4">
+					<i class="fa fa-server fa-5x" aria-hidden="true"></i>
+					<p>Quality</p>
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at ut assumenda nisi id, saepe, inventore error dolore dolores voluptas praesentium minima iure aut quod voluptatibus, optio, atque iusto quis.</p>
+				</div>
+				<div class="col m4">
+					<i class="fa fa-bars fa-5x" aria-hidden="true"></i>
+					<p>Support</p>
+					<p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A at ut assumenda nisi id, saepe, inventore error dolore dolores voluptas praesentium minima iure aut quod voluptatibus, optio, atque iusto quis.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="info">
+		<div class="bg">
+			<div class="row">
+				<div class="col m6">
+					<h2>Who are we now</h2>
+					<p>Ideate integrate food-truck agile ideate thinker-maker-doer user story intuitive hacker integrate workflow Steve Jobs. Steve Jobs pair programming food-truck big data long shadow SpaceTeam agile agile affordances.<br>User centered design food-truck experiential minimum viable product human-centered design prototype viral quantitative vs. qualitative.
+					</p>
+				</div>
+				<div class="col m6">
+					<img src="img/img_tablet.png" class="responsive-img" alt="tablet">
+				</div>
+			</div>
+			<div class="row center">
+				<div class="col m12">
+					<iframe width="800" height="450" src="https://www.youtube.com/embed/pYOJNOJfJxU?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	<script src="assets/js/fullclip.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+body{
+	background-color: #f5f5f5;
+}
+
+.brand-logo{
+	img{
+			border-right: 1px solid grey;
+			padding: 0 30px;
+			margin: 10px;
+	}
+}
+
+.theme{
+	p{
+		color: black;
+		font-weight: bolder;
+		border-right: 1px solid grey;
+		padding: 6px 40px;
+		margin: 10px;
+		span{
+			color: #00BFFF;
+			
+		}
+	}
+}
+.device{
+	i{
+		margin: 15px 0;
+	}
+}
+.blue, .red{
+	box-shadow: 0px 10px 4px -2px rgba(15,24,133,1);
+	margin: 10px;
+}
+.red{
+	box-shadow: 0px 10px 4px -2px rgba(128,7,7,1);
+}
+.fa-times{
+	margin: 15px;
+	color: #BDBDBD
+}
+.dropdown-content,.dropdown-content {
+	li{
+		a{
+			color: #424242;
+		}
+		span{
+			color: #424242;
+		}
+	}
+} 
+.container{
+	button{
+		background-color: #e91e63;
+		border: none;
+		width: 200px;
+		height: 50px;
+		color: white;
+	}
+}
+.design{
+	background-color: white;
+	border-radius: 10px;
+	margin: 100px 30px;
+	padding: 20px;
+	p{
+		padding: 30px;
+		color: #bdbdbd;
+		font-size: 1.3em
+	}
+	.description{
+		padding: 0;
+		font-size: 1em
+	}
+
+}
+.fa-th{
+	color: #e91e63;
+}
+.fa-server{
+	color: #4dd0e1;
+}
+.fa-bars{
+	color: green;
+}
+.info{
+	background: url('../img/img_city.jpg');
+	background-size: cover;
+	margin: 0 30px;
+	position: relative;
+	bottom: 120px;
+	background-attachment: fixed;
+	color: $colorTitulos;
+	padding: 30px;
+	.bg{
+		background-color: rgba(0, 0, 0, 0.5);
+		margin: -30px;
+	}
+	p{
+		font-size: 1.3em
+	}
+
+}
