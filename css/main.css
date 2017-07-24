@@ -76,6 +76,9 @@ body {
     padding: 0;
     font-size: 1em; }
 
+.fa-chevron-down {
+  color: #A4A4A4; }
+
 .fa-th {
   color: #e91e63; }
 
@@ -269,7 +272,7 @@ body {
     .contactUs .row .contact-info {
       padding: 50px;
       color: white; }
-      .contactUs .row .contact-info h3 {
+      .contactUs .row .contact-info h4 {
         display: inline-block; }
     .contactUs .row .contact {
       background-color: white;
