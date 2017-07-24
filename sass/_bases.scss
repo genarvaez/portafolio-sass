@@ -7,6 +7,11 @@ body{
 	background-color: #f5f5f5;
 }
 
+.bigSection{
+	box-shadow: -3px 17px 33px 2px rgba(0,0,0,0.75);
+	margin: $marginContainer;
+}
+
 .brand-logo{
 	img{
 			border-right: 1px solid grey;
@@ -38,6 +43,10 @@ body{
 	left: 0;
 	right: 0;
 	z-index: 100;
+	#margin{
+		margin-bottom: 0
+	}
+
 }
 
 .device{
@@ -68,11 +77,7 @@ body{
 } 
 .container{
 	button{
-		background-color: #e91e63;
-		border: none;
-		width: 200px;
-		height: 50px;
-		color: white;
+		@include buttonPink;
 	}
 }
 .design{
@@ -157,17 +162,188 @@ body{
 .portfolio{
 	background-color: $colorTitulos;
 	margin: 100px 0;
+	padding-bottom: 40px;
 	img{
 		border-radius: 30px;
 		box-shadow: $shadow;
 	}
 
 }
+.aboutUs{
+	margin: 350px auto 30px;
+}
+.fa-facebook{
+	color: #2E2EFE
+}
+.fa-twitter{
+	color: #00BFFF
+}
+.fa-dribbble, .titlePink{
+	color: #FE2EF7
+}
+.fa-google-plus, .titleOrange{
+	color: #FE2E64;
+}
+.fa-linkedin, .titleBlue{
+	color: #0080FF;
+}
 
+.products, .portfolio, .aboutUs, .plan, .clients{
+	h2{
+		@include titulo;
+	}
+	h5{
+		@include subTitulo;
+	
+	}
+	h4{
+		@include titulo;
+		font-size: 1.2em
+	}
+}
+.team{
+	text-align: left;
+	p{
+		color: $colorTexto_seccion;
+	}
+}
+.plan{
+	padding: 20px;
+	.chose-plan{
+		text-align: justify;
+		p{
+			color: $colorTexto_seccion
+		}
+	}
+	.card, .noCard{
+		background-color: $colorTitulos;
+		border-radius: 10px;
+		padding: 20px;
+		box-shadow: $hoverShadow;
+		h5{
+			font-size: 0.8em;
+			font-weight: bolder;
+		}
+		span{
+			font-size: 3.5em;
+			font-weight: bolder;
+		}
+		ul{
+			li{
+				border-top: 1px solid $colorTexto_seccion;
+				padding: 10px;
+				color: $colorTexto_seccion
+			}
+		}
+		button{
+			@include buttonPink
+		}
+	}
+	.noCard{
+		background-color: transparent;
+		border: none;
+		box-shadow: none
+	}
+}
+.clients{
+	p, h4{
+		color: $colorTexto_seccion;
+	}
+	.client-image{
+		img{
+			width:  30%;
+		}
+	}
+	padding-bottom: 20px;
+}
+.subscribe{
+	background: url('../img/about.jpg');
+	background-size: cover;
+	background-position: left top;
+	
+	.subscribe-box{
+		background-color: rgba(0, 0, 0, 0.6);
+	}
+	h2{
+		@include titulo;
+		color: white;
+	}
+	p{
+		@include subTitulo;
+		color: white;
+	}
+	.form{
+		background-color: $colorTitulos;
+		border-radius: 10px;
+		margin: 40px 0;
+		button{
+			@include buttonPink;
+			border-radius: 5px;
+			margin-top: 20px;
+		}
+		i{
+			margin-top: 35px;
+		}
+	}
+}
+.blog{
+	img{
+		border-radius: 5px;
+	}
+	h4{
+		@include titulo; 
+		font-size: 1.2em;
+	}
+	p{
+		color: $colorTexto_seccion;
+	}
+	.blog-box{
+		padding: 30px;
+	}
+}
 
+.contactUs{
+	background: url('../img/img_city.jpg');
+	background-size: cover;
+	.row{
+		background-color: rgba(0, 0, 0, 0.6);
+		.contact-info{
+			padding: 50px;
+			color: white;
+			h3{
+				display: inline-block
+			}
+		}
+		.contact{
+			background-color: white;
+			border-radius: 10px;
+			margin: 40px;
+			padding: 30px;
 
-.bigSection{
-	box-shadow: -3px 17px 33px 2px rgba(0,0,0,0.75);
-	margin: $marginContainer;
+			h3{
+				background-color: #e91e63;
+				border-radius: 10px; 
+				margin: 20px;
+				position: relative;
+				bottom: 80px;
+				color: white;
+				padding: 10px;
+				box-shadow: $shadow;
+			}
+			input[type=text]:not(.browser-default), .input{
+				background-color: white;
+			}
+			textarea{
+				border: none;
+				border-bottom: 1px solid $colorTexto_seccion;
+				height: 130px;
+
+			}
+			button{
+				@include buttonPink;
+				border-radius: 5px
+			}
+		}
+	}
 
 }

@@ -1,0 +1,20 @@
+@mixin titulo{
+	color: $colorTitulo_seccion;
+	font-size: 3em;
+	font-weight: bolder;
+
+	margin-bottom: 20px;
+}
+@mixin subTitulo{
+	color: $colorTexto_seccion;
+	font-size: 1.5em;
+	line-height: 30px;
+	margin: 20px;
+}
+@mixin buttonPink{
+	background-color: #e91e63;
+	border: none;
+	color: white;
+	width: 130px;
+	height: 50px;
+}
